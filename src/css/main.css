@@ -1,0 +1,34 @@
+.main-section{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.main__hero-section{
+	height: 50vh;
+	margin-top: 20px;
+	background-color: var(--med-light-mode);
+	width: 100%;
+}
+
+.main__hero-section-form{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.main__hero-title{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.main__hero-section .main-input{
+	width: 50%;
+	text-align: center;
+}
+
+@import './main/results.css';

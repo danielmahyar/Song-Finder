@@ -1,0 +1,44 @@
+*{
+  /*Common variables from Kleros.io*/
+
+  /*Primary colors */
+  --primary-light-mode-color: #4D00B4;
+  --primary-dark-mode-color: #7E1BD4;
+
+  /*Secondary colors */
+  --secondary-light-mode-color: #9013FE;
+  --secondary-light-mode-color: #B45FFF;
+
+  /*Medium purple*/
+  --med-light-mode: #F8F1FF;
+  --med-dark-mode: #390F6C;
+
+  --btn-default-color: #009AFF;
+  --btn-hover-color: #7BCBFF;
+
+  --btn-secondary-color: white;
+  --btn-secondary-hover-color: #FBF9FE;
+
+  /*Text colors*/
+  --primary-text-light-mode: #333333;
+  --primary-text-dark-mode: #DAF0FF;
+
+  font-family: 'Open Sans', sans-serif;
+
+
+  /*
+    Common reset properties
+  */
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  position: relative;
+  min-height: 100vh;
+}
+
+
+
+@import './app.css';

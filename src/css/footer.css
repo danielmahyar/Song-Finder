@@ -1,0 +1,32 @@
+.footer{
+	background-color: var(--primary-light-mode-color);
+	height: 64px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__text-left{
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+}
+
+.footer__text-left,
+.footer__text-right{
+	margin: .5rem 1.75rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+
+}
+
+.footer__text-right a{
+	text-decoration: none;
+	text-decoration-line: underline;
+	color: white;
+}

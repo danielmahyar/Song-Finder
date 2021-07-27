@@ -1,0 +1,7 @@
+/*
+	This file imports all the css from standards dict
+*/
+
+@import './btn-class.css';
+@import './card-class.css';
+@import './input-class.css';
