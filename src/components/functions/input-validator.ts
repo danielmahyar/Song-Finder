@@ -3,10 +3,9 @@ export const searchIsValid = (stringToValidate: string, prevResult: string, opti
 	
 	//Is string required and empty
 	if(options.isRequired && stringToValidate === '') return false
+	
 	//Previous result is same as current
 	if(stringToValidate === prevResult) return false
-	console.log(stringToValidate)
-	console.log(prevResult)
 
 	//Check for invalid characters
 	if(INVALID_CHARACTERS.test(stringToValidate)) return false
@@ -16,4 +15,10 @@ export const searchIsValid = (stringToValidate: string, prevResult: string, opti
 
 	//If test is passed then pass true
 	return true
+}
+
+export const heroContentIsLoading = (search, results) => {
+	if(search === "" && results === []) return false
+	if(search !== "" && results === []) return true
+	if(search !== "" && results !== []) return false
 }

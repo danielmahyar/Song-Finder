@@ -13,3 +13,23 @@
 	align-items: center;
 	font-size: 2rem;
 }
+
+.result__card-left-section{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: .5em 1em;
+}
+
+.result__card-right-section{
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.result__card-right-section img{
+	width: 100%;
+	aspect-ratio: 1 / 1;
+}

@@ -19,8 +19,23 @@ export const searchForArtist = async(artist_name: string) => {
 
 }
 
-export const fetchDataFromApi = async(params: Params): Promise<SearchResult> => {
+export const getArtist = async(artist_id: number) => {
 	try {
+		const query: Params = {
+			action: `artists/${artist_id}`
+		}
+
+		const data = await fetchDataFromApi(query)
+		return { ...data.response.artist }
+	} catch (error) {
+		console.error(error)
+	}
+}
+
+export const fetchDataFromApi = async(params: Params = { action: '', param: '', payload: ''}): Promise<any> => {
+	try {
+		params.param = (params.param === undefined) ? '' : params.param
+		params.payload = (params.payload === undefined) ? '' : params.payload
 		const response = await fetch(`${API_URL}/${params.action}?access_token=${ACCESS_TOKEN}${params.param}${params.payload}`)
 
 		return new Promise<SearchResult>((resolve, reject) => {

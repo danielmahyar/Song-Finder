@@ -29,7 +29,9 @@
 	width: 48px;
 }
 
-.header__text-middle{
+.header__nav-link{
 	font-size: 1rem;
 	font-weight: bold;
+	text-decoration: none;
+	color: white;
 }
