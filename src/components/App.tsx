@@ -82,7 +82,7 @@ function App() {
           </Switch>
         </AnimatePresence>
       </ResultsContext.Provider>
-
+                
       <Footer />
     </>
   )

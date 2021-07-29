@@ -1,5 +1,6 @@
 import React, { useContext, useRef, useLayoutEffect } from 'react'
 import { ResultsContext } from '../../App'
+import { SearchResult } from '../../models/genius-hits'
 import ResultCard from './ResultCard'
 
 export default function Results() {
@@ -17,7 +18,7 @@ export default function Results() {
 			<section className="main__results">
 
 				{results.map((artistInfo: any) => {
-					const screenInfo = artistInfo.result
+					const screenInfo: SearchResult = artistInfo.result
 					return <ResultCard key={screenInfo.id} {...screenInfo} />
 				})}
 

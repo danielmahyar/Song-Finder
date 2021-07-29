@@ -4,8 +4,9 @@ import {
 	useSpring, 
 	animated
 } from 'react-spring'
+import { SearchResult } from '../../models/genius-hits'
 
-export default function ResultCard(props: any) {
+export default function ResultCard(props: SearchResult) {
 	const { 
 		title, 
 		header_image_thumbnail_url,
@@ -49,6 +50,5 @@ export default function ResultCard(props: any) {
 				</div>
 			</Link>
 		</animated.div>
-
 	)
 }
